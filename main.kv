@@ -1,0 +1,30 @@
+<MyBoxLayout>:
+  orientation: 'vertical'
+  
+  ActionBar:
+    ActionView:
+      ActionPrevious:
+      ActionButton:
+        text:'X'
+
+  BoxLayout:
+    Label: 
+      text: 'user'
+      font_size: 50
+    TextInput:
+      id: user_input
+      font_size: 50
+  BoxLayout:
+    Label: 
+      text: 'password'
+      font_size: 50
+    TextInput:
+      password: True
+      font_size: 50
+      id: password_input
+  Button:
+    text: 'Sing In'
+  Button:
+    text: 'Sing Up'
+    on_press: root.cadastrar()
+
